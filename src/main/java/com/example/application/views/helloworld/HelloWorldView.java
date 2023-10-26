@@ -3,6 +3,7 @@ package com.example.application.views.helloworld;
 import com.example.application.views.MainLayout;
 import com.vaadin.flow.component.Key;
 import com.vaadin.flow.component.button.Button;
+import com.vaadin.flow.component.dependency.NpmPackage;
 import com.vaadin.flow.component.notification.Notification;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.textfield.TextField;
@@ -13,6 +14,7 @@ import com.vaadin.flow.router.RouteAlias;
 @PageTitle("Hello World")
 @Route(value = "hello", layout = MainLayout.class)
 @RouteAlias(value = "", layout = MainLayout.class)
+@NpmPackage(value = "line-awesome", version = "1.3.0")
 public class HelloWorldView extends HorizontalLayout {
 
     private TextField name;
